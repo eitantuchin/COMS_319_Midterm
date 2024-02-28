@@ -1,9 +1,9 @@
 var flag = 0;
 function changePage() {
   if (flag == 1) {
-    window.location.href = 'first_catalog_page.html';
+    window.location.href = 'states_game.html';
   }
   else {
-    window.location.href = 'second_catalog_page.html';
+    window.location.href = 'states_info.html';
   }
 }
