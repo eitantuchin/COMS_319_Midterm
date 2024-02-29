@@ -1,36 +1,455 @@
 {
     "states": [
       {
+        "state": "Alabama",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Alabama.svg/1920px-Flag_of_Alabama.svg.png",
+        "img": "https://geology.com/cities-map/map-of-alabama-cities.gif",
+        "founded": "December 14, 1819",
+        "population": 5108468,
+        "capital": "Montgomery",
+        "land-area": 52420
+      },
+      {
+        "state": "Alaska",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Alaska.svg/1280px-Flag_of_Alaska.svg.png",
+        "img": "https://geology.com/cities-map/map-of-alaska-cities.gif",
+        "founded": "January 3, 1959",
+        "population": 733406,
+        "capital": "Juneau",
+        "land-area": 663300
+      },
+      {
+        "state": "Arizona",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Arizona.svg/1920px-Flag_of_Arizona.svg.png",
+        "img": "https://geology.com/cities-map/map-of-arizona-cities.gif",
+        "founded": "February 14, 1912",
+        "population": 7431344,
+        "capital": "Phoenix",
+        "land-area": 113990
+      },
+      {
+        "state": "Arkansas",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Arkansas.svg/1920px-Flag_of_Arkansas.svg.png",
+        "img": "https://geology.com/cities-map/map-of-arkansas-cities.gif",
+        "founded": "June 15, 1836",
+        "population": 3067732,
+        "capital": "Little Rock",
+        "land-area": 53179
+      },
+      {
+        "state": "California",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/1280px-Flag_of_California.svg.png",
+        "img": "https://geology.com/cities-map/map-of-california-cities.gif",
+        "founded": "September 9, 1850",
+        "population": 39576757,
+        "capital": "Sacramento",
+        "land-area": 163696
+      },
+      {
+        "state": "Colorado",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Flag_of_Colorado.svg/1920px-Flag_of_Colorado.svg.png",
+        "img": "https://geology.com/cities-map/map-of-colorado-cities.gif",
+        "founded": "August 1, 1876",
+        "population": 5777610,
+        "capital": "Denver",
+        "land-area": 104094
+      },
+      {
+        "state": "Connecticut",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_Connecticut.svg/1920px-Flag_of_Connecticut.svg.png",
+        "img": "https://geology.com/cities-map/map-of-connecticut-cities.gif",
+        "founded": "January 9, 1788",
+        "population": 3617176,
+        "capital": "Hartford",
+        "land-area": 4842
+      },
+      {
+        "state": "Delaware",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Flag_of_Delaware.svg/1920px-Flag_of_Delaware.svg.png",
+        "img": "https://geology.com/cities-map/map-of-delaware-cities.gif",
+        "founded": "December 7, 1787",
+        "population": 1031890,
+        "capital": "Dover",
+        "land-area": 1954
+      },
+      {
+        "state": "Florida",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Florida.svg/1920px-Flag_of_Florida.svg.png",
+        "img": "https://geology.com/cities-map/map-of-florida-cities.gif",
+        "founded": "March 3, 1845",
+        "population": 22610726,
+        "capital": "Tallahassee",
+        "land-area": 53625
+      },
+      {
+        "state": "Georgia",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Georgia_%28U.S._state%29.svg/1920px-Flag_of_Georgia_%28U.S._state%29.svg.png",
+        "img": "https://geology.com/cities-map/map-of-georgia-cities.gif",
+        "founded": "January 2, 1788",
+        "population": 11029227,
+        "capital": "Atlanta",
+        "land-area": 57513
+      },
+      {
+        "state": "Hawaii",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Hawaii.svg/1920px-Flag_of_Hawaii.svg.png",
+        "img": "https://geology.com/cities-map/map-of-hawaii-cities.gif",
+        "founded": "August 21, 1959",
+        "population": 1435138,
+        "capital": "Honolulu",
+        "land-area": 6423
+      },
+      {
+        "state": "Idaho",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Idaho.svg/1920px-Flag_of_Idaho.svg.png",
+        "img": "https://geology.com/cities-map/map-of-idaho-cities.gif",
+        "founded": "July 3, 1890",
+        "population": 1964726,
+        "capital": "Boise",
+        "land-area": 83569
+      },
+      {
+        "state": "Illinois",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Illinois.svg/1920px-Flag_of_Illinois.svg.png",
+        "img": "https://geology.com/cities-map/map-of-illinois-cities.gif",
+        "founded": "December 3, 1818",
+        "population": 12549689,
+        "capital": "Springfield",
+        "land-area": 57914
+      },
+      {
+        "state": "Indiana",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Flag_of_Indiana.svg/1920px-Flag_of_Indiana.svg.png",
+        "img": "https://geology.com/cities-map/map-of-indiana-cities.gif",
+        "founded": "December 11, 1816",
+        "population": 6862199,
+        "capital": "Indianapolis",
+        "land-area": 36420
+      },
+      {
         "state": "Iowa",
-        "flag": "Avengers",
-        "founded": 2012,
-        "img": "https://freepngimg.com/thumb/avengers/5-2-avengers-png-picture.png"
-        
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Iowa.svg/1920px-Flag_of_Iowa.svg.png",
+        "img": "https://geology.com/cities-map/map-of-iowa-cities.gif",
+        "founded": "December 28, 1846",
+        "population": 3207004,
+        "capital": "Des Moines",
+        "land-area": 55857
       },
       {
-        "movieId": "A124",
-        "title": "The Last Airbender",
-        "year": 2005,
-        "url": "https://freepngimg.com/save/37589-aang-transparent-background/480x486"
+        "state": "Kansas",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Kansas.svg/1920px-Flag_of_Kansas.svg.png",
+        "img": "https://geology.com/cities-map/map-of-kansas-cities.gif",
+        "founded": "January 29, 1861",
+        "population": 2940546,
+        "capital": "Topeka",
+        "land-area": 81759
       },
       {
-        "movieId": "76788",
-        "title": "The Iron Giant",
-        "year": 1999,
-        "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/The_Iron_Giant_poster.JPG/220px-The_Iron_Giant_poster.JPG"
+        "state": "Kentucky",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Flag_of_Kentucky.svg/1920px-Flag_of_Kentucky.svg.png",
+        "img": "https://geology.com/cities-map/map-of-kentucky-cities.gif",
+        "founded": "June 1, 1792",
+        "population": 4526154,
+        "capital": "Frankfort",
+        "land-area": 40408
       },
       {
-        "movieId": "BB124",
-        "title": "Mulan",
-        "year": 1998,
-        "url": "https://freepngimg.com/thumb/disney/113364-picture-mulan-disney-free-photo.png"
+        "state": "Louisiana",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Flag_of_Louisiana.svg/1920px-Flag_of_Louisiana.svg.png",
+        "img": "https://geology.com/cities-map/map-of-louisiana-cities.gif",
+        "founded": "April 30, 1812",
+        "population": 4573749,
+        "capital": "Baton Rouge",
+        "land-area": 52378
       },
       {
-        "movieId": "12345",
-        "title": "Harry Potter",
-        "year": 2001,
-        "url": "https://freepngimg.com/thumb/harry_potter/2-2-harry-potter-transparent.png"
-      }    
+        "state": "Maine",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_Maine.svg/1920px-Flag_of_Maine.svg.png",
+        "img": "https://geology.com/cities-map/map-of-maine-cities.gif",
+        "founded": "March 15, 1820",
+        "population": 1395722,
+        "capital": "Augusta",
+        "land-area": 35380
+      },
+      {
+        "state": "Maryland",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_Maryland.svg/1920px-Flag_of_Maryland.svg.png",
+        "img": "https://geology.com/cities-map/map-of-maryland-cities.gif",
+        "founded": "April 28, 1788",
+        "population": 6180253,
+        "capital": "Annapolis",
+        "land-area": 12406
+      },
+      {
+        "state": "Massachusetts",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Massachusetts.svg/1920px-Flag_of_Massachusetts.svg.png",
+        "img": "https://geology.com/cities-map/map-of-massachusetts-cities.gif",
+        "founded": "February 6, 1788",
+        "population": 7001399,
+        "capital": "Boston",
+        "land-area": 10554
+      },
+      {
+        "state": "Michigan",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Michigan.svg/1920px-Flag_of_Michigan.svg.png",
+        "img": "https://geology.com/cities-map/map-of-michigan-cities.gif",
+        "founded": "January 26, 1837",
+        "population": 10037261,
+        "capital": "Lansing",
+        "land-area": 96713
+      },
+      {
+        "state": "Minnesota",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Minnesota.svg/1920px-Flag_of_Minnesota.svg.png",
+        "img": "https://geology.com/cities-map/map-of-minnesota-cities.gif",
+        "founded": "May 11, 1858",
+        "population": 5737915,
+        "capital": "Saint Paul",
+        "land-area": 86935
+      },
+      {
+        "state": "Mississippi",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Flag_of_Mississippi.svg/1920px-Flag_of_Mississippi.svg.png",
+        "img": "https://geology.com/cities-map/map-of-mississippi-cities.gif",
+        "founded": "December 10, 1817",
+        "population": 2939690,
+        "capital": "Jackson",
+        "land-area": 48432
+      },
+      {
+        "state": "Missouri",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Flag_of_Missouri.svg/1920px-Flag_of_Missouri.svg.png",
+        "img": "https://geology.com/cities-map/map-of-missouri-cities.gif",
+        "founded": "August 10, 1821",
+        "population": 6196156,
+        "capital": "Jefferson City",
+        "land-area": 69707
+      },
+      {
+        "state": "Montana",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_Montana.svg/1920px-Flag_of_Montana.svg.png",
+        "img": "https://geology.com/cities-map/map-of-montana-cities.gif",
+        "founded": "November 8, 1889",
+        "population": 1132812,
+        "capital": "Helena",
+        "land-area": 147040
+      },
+      {
+        "state": "Nebraska",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Flag_of_Nebraska.svg/1920px-Flag_of_Nebraska.svg.png",
+        "img": "https://geology.com/cities-map/map-of-nebraska-cities.gif",
+        "founded": "March 1, 1867",
+        "population": 1978379,
+        "capital": "Lincoln",
+        "land-area": 77348
+      },
+      {
+        "state": "Nevada",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Flag_of_Nevada.svg/1920px-Flag_of_Nevada.svg.png",
+        "img": "https://geology.com/cities-map/map-of-nevada-cities.gif",
+        "founded": "October 31, 1864",
+        "population": 3194176,
+        "capital": "Carson City",
+        "land-area": 110572
+      },
+      {
+        "state": "New Hampshire",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_of_New_Hampshire.svg/1920px-Flag_of_New_Hampshire.svg.png",
+        "img": "https://geology.com/cities-map/map-of-new-hampshire-cities.gif",
+        "founded": "June 21, 1788",
+        "population": 1402054,
+        "capital": "Concord",
+        "land-area": 9349
+      },
+      {
+        "state": "New Jersey",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_New_Jersey.svg/1920px-Flag_of_New_Jersey.svg.png",
+        "img": "https://geology.com/cities-map/map-of-new-jersey-cities.gif",
+        "founded": "December 18, 1787",
+        "population": 9290841,
+        "capital": "Trenton",
+        "land-area": 8723
+      },
+      {
+        "state": "New Mexico",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_New_Mexico.svg/1920px-Flag_of_New_Mexico.svg.png",
+        "img": "https://geology.com/cities-map/map-of-new-mexico-cities.gif",
+        "founded": "January 6, 1912",
+        "population": 2114371,
+        "capital": "Santa Fe",
+        "land-area": 121589
+      },
+      {
+        "state": "New York",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_New_York.svg/1920px-Flag_of_New_York.svg.png",
+        "img": "https://geology.com/cities-map/map-of-new-york-cities.gif",
+        "founded": "July 26, 1788",
+        "population": 19571216,
+        "capital": "Albany",
+        "land-area": 54556
+      },
+      {
+        "state": "North Carolina",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_North_Carolina.svg/1920px-Flag_of_North_Carolina.svg.png",
+        "img": "https://geology.com/cities-map/map-of-north-carolina-cities.gif",
+        "founded": "November 21, 1789",
+        "population": 10835491,
+        "capital": "Raleigh",
+        "land-area": 53819
+      },
+      {
+        "state": "North Dakota",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Flag_of_North_Dakota.svg/1920px-Flag_of_North_Dakota.svg.png",
+        "img": "https://geology.com/cities-map/map-of-north-dakota-cities.gif",
+        "founded": "November 2, 1889",
+        "population": 783926,
+        "capital": "Bismarck",
+        "land-area": 70698
+      },
+      {
+        "state": "Ohio",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Ohio.svg/1920px-Flag_of_Ohio.svg.png",
+        "img": "https://geology.com/cities-map/map-of-ohio-cities.gif",
+        "founded": "March 1, 1803",
+        "population": 11785935,
+        "capital": "Columbus",
+        "land-area": 44825
+      },
+      {
+        "state": "Oklahoma",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Flag_of_Oklahoma.svg/1920px-Flag_of_Oklahoma.svg.png",
+        "img": "https://geology.com/cities-map/map-of-oklahoma-cities.gif",
+        "founded": "November 16, 1907",
+        "population": 4053824,
+        "capital": "Oklahoma City",
+        "land-area": 69899
+      },
+      {
+        "state": "Oregon",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Oregon.svg/1920px-Flag_of_Oregon.svg.png",
+        "img": "https://geology.com/cities-map/map-of-oregon-cities.gif",
+        "founded": "February 14, 1859",
+        "population": 4233358,
+        "capital": "Salem",
+        "land-area": 98379
+      },
+      {
+        "state": "Pennsylvania",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Pennsylvania.svg/1920px-Flag_of_Pennsylvania.svg.png",
+        "img": "https://geology.com/cities-map/map-of-pennsylvania-cities.gif",
+        "founded": "December 12, 1787",
+        "population": 12961683,
+        "capital": "Harrisburg",
+        "land-area": 46054
+      },
+      {
+        "state": "Rhode Island",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Rhode_Island.svg/1920px-Flag_of_Rhode_Island.svg.png",
+        "img": "https://geology.com/cities-map/map-of-rhode-island-cities.gif",
+        "founded": "May 29, 1790",
+        "population": 1095962,
+        "capital": "Providence",
+        "land-area": 1045
+      },
+      {
+        "state": "South Carolina",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Flag_of_South_Carolina.svg/1920px-Flag_of_South_Carolina.svg.png",
+        "img": "https://geology.com/cities-map/map-of-south-carolina-cities.gif",
+        "founded": "May 23, 1788",
+        "population": 5373555,
+        "capital": "Columbia",
+        "land-area": 32020
+      },
+      {
+        "state": "South Dakota",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_South_Dakota.svg/1920px-Flag_of_South_Dakota.svg.png",
+        "img": "https://geology.com/cities-map/map-of-south-dakota-cities.gif",
+        "founded": "November 2, 1889",
+        "population": 919318,
+        "capital": "Pierre",
+        "land-area": 199729
+      },
+      {
+        "state": "Tennessee",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Tennessee.svg/1920px-Flag_of_Tennessee.svg.png",
+        "img": "https://geology.com/cities-map/map-of-tennessee-cities.gif",
+        "founded": "June 1, 1796",
+        "population": 7126489,
+        "capital": "Nashville",
+        "land-area": 109150
+      },
+      {
+        "state": "Texas",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/1920px-Flag_of_Texas.svg.png",
+        "img": "https://geology.com/cities-map/map-of-texas-cities.gif",
+        "founded": "December 29, 1845",
+        "population": 30503301,
+        "capital": "Austin",
+        "land-area": 695662
+      },
+      {
+        "state": "Utah",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Utah.svg/1920px-Flag_of_Utah.svg.png",
+        "img": "https://geology.com/cities-map/map-of-utah-cities.gif",
+        "founded": "January 4, 1896",
+        "population": 3417734,
+        "capital": "Salt Lake City",
+        "land-area": 219882
+      },
+      {
+        "state": "Vermont",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Vermont.svg/1920px-Flag_of_Vermont.svg.png",
+        "img": "https://geology.com/cities-map/map-of-vermont-cities.gif",
+        "founded": "March 4, 1791",
+        "population": 647464,
+        "capital": "Montpelier",
+        "land-area": 24904
+      },
+      {
+        "state": "Virginia",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Flag_of_Virginia.svg/1920px-Flag_of_Virginia.svg.png",
+        "img": "https://geology.com/cities-map/map-of-virginia-cities.gif",
+        "founded": "June 25, 1788",
+        "population": 8715698,
+        "capital": "Richmond",
+        "land-area": 110787
+      },
+      {
+        "state": "Washington",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Washington.svg/1920px-Flag_of_Washington.svg.png",
+        "img": "https://geology.com/cities-map/map-of-washington-cities.gif",
+        "founded": "November 11, 1889",
+        "population": 7812880,
+        "capital": "Olympia",
+        "land-area": 184661
+      },
+      {
+        "state": "West Virginia",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Flag_of_West_Virginia.svg/1920px-Flag_of_West_Virginia.svg.png",
+        "img": "https://geology.com/cities-map/map-of-west-virginia-cities.gif",
+        "founded": "June 20, 1863",
+        "population": 1770071,
+        "capital": "Charleston",
+        "land-area": 62259
+      },
+      {
+        "state": "Wisconsin",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Flag_of_Wisconsin.svg/1920px-Flag_of_Wisconsin.svg.png",
+        "img": "https://geology.com/cities-map/map-of-wisconsin-cities.gif",
+        "founded": "May 29, 1848",
+        "population": 5910955,
+        "capital": "Madison",
+        "land-area": 169635
+      },
+      {
+        "state": "Wyoming",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Wyoming.svg/1920px-Flag_of_Wyoming.svg.png",
+        "img": "https://geology.com/cities-map/map-of-wyoming-cities.gif",
+        "founded": "July 10, 1890",
+        "population": 58405,
+        "capital": "Cheyenne",
+        "land-area": 253335
+      }
+
     ]
   }
-  
