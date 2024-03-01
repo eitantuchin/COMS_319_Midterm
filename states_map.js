@@ -26,17 +26,21 @@ function createStateInfoInFile(myStates, name) {
             var pop =  myStates.states[i].population;
             var capital =  myStates.states[i].capital;
             var area =  myStates.states[i].area;
-            window.location.href = 'state_info.html';
-            document.body.innerHTML =  `<h1>${state}</h1>
-            <img src="${flag}" alt="${state} Flag">
-            <img src="${img}" alt="${state} Image">
+            //window.location.href = 'state_info.html';
+            document.body.innerHTML = 
+            `<button type = "button" onclick="redirectToMap()">Back To Map</button>
+            <h1>${state}</h1>
+            <img src="${flag}" alt="${state} Flag" style = "width: 40%; height: 40%">
+            <img src="${img}" alt="${state} Image" style = "width: 40%; height: 40%">
             <p>Founded: ${founded}</p>
             <p>Population: ${pop}</p>
             <p>Capital: ${capital}</p>
             <p>Area: ${area}</p>
             `;
-            
-            
         }
     }
+}
+
+function redirectToMap() {
+    window.location.href = 'states_map.html';
 }
