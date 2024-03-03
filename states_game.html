@@ -32,10 +32,15 @@
         margin-left: 100px;
         margin-top: 35px;
     }
+    
+    #nav {
+        background-color: white;
+    }
 </style>
 
 <body>
-
+    <button id = "nav" type = "button" onclick="flag = 1; redirect()">To the Map</button>
+    <button id = "nav" type = "button" onclick="flag = 2; redirect()">Author Info</button>
     <form id="game_form">
         <p>State name: <input type="text" name="inputStateName" value=""></p>
         <button type="button" onclick="getInputValue();">GUESS STATE</button>

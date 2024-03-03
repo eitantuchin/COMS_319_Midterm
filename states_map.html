@@ -37,15 +37,19 @@
         margin-left: 100px;
         margin-top: 35px;
     }
-   
+    #nav {
+        background-color: white;
+    }
 
 </style>
 
 <body>
 
+    <button id = "nav" type = "button" onclick="flag = 1; redirect()">To the Game</button>
+    <button id = "nav" type = "button" onclick="flag = 2; redirect()">Author Info</button>
+    
     <div id="instructions">
         <p>Click on any state to learn more about it</p>
-        
     </div>
    
     <div class="map-container" style="display: flex;">

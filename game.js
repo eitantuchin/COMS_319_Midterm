@@ -23,3 +23,11 @@ function getInputValue() {
         }   
     }  
 } 
+function redirect() {
+    if (flag == 1) {
+        window.location.href = 'states_map.html';
+    }
+    else {
+        window.location.href = 'index.html';
+    }
+}

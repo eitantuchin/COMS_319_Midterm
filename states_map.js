@@ -27,9 +27,9 @@ function createStateInfoInFile(myStates, name) {
             var capital =  myStates.states[i].capital;
             var area =  myStates.states[i].area;
             document.body.innerHTML = 
-            ` <button type = "button" onclick="flag = 1; redirect()">Back To Map</button>
-            <button type = "button"  onclick="flag = 2; redirect()">To Game</button>
-            <button type = "button"  onclick="flag = 3; redirect()">Author Info</button>
+            ` <button type = "button" onclick="flag = 1; redirect()">To Game</button>
+            <button type = "button"  onclick="flag = 2; redirect()">Author Info</button>
+            <button type = "button"  onclick="flag = 3; redirect()">Back to the Map</button>
             <h1>${state}</h1>
             <img src="${flag}" alt="${state} Flag" style = "width: 40%; height: 40%">
             <img src="${img}" alt="${state} Image" style = "width: 40%; height: 40%">
@@ -45,12 +45,12 @@ function createStateInfoInFile(myStates, name) {
 
 function redirect() {
     if (flag == 1) {
-        window.location.href = 'states_map.html';
-    }
-    else if (flag == 2) {
         window.location.href = 'states_game.html';
     }
+    else if (flag == 2) {
+        window.location.href = 'index.html'; 
+    }
     else {
-        window.location.href = 'index.html';
+        window.location.href = 'states_map.html';
     }
 }
