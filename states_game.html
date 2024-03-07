@@ -3,24 +3,29 @@
 
 <head>
     <title>States Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 
 <body>
-    <div id = "nav">
-        <button type = "button" onclick="flag = 1; redirect()">To the Map</button>
-        <button type = "button" onclick="flag = 2; redirect()">Author Info</button>
+    <div id="nav">
+        <button type="button" onclick="flag = 1; redirect()">To the Map</button>
+        <button type="button" onclick="flag = 2; redirect()">Author Info</button>
     </div>
-    <div id = game_stuff>
-        <form id="game_form" onsubmit="event.preventDefault(); getInputValue();">
-            <p>State name: <input type="text" name="inputStateName" value=""></p>
-            <button type="submit">GUESS STATE</button>
-        </form>
+    <div id=game_stuff>
         <div id="instructions">
-            <p>Guess all of the states in the US before time runs out!</p>
+            <p>Guess all of the states in the US before time runs out! Scroll down to see all the states.</p>
+        </div>
+        <div>
+            <form id="game_form" onsubmit="event.preventDefault(); getInputValue();">
+                <p>State name: <input type="text" id="myInput" name="inputStateName" value=""></p>
+                <button type="submit">GUESS STATE</button>
+            </form>
         </div>
         <div id="timer">5:00</div>
+        <div id="new_game">
+            <button type="button" onclick="newGame()">PLAY GAME</button>
+        </div>
     </div>
 
     <div class="map-container" style="display: flex;">

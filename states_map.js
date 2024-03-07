@@ -28,7 +28,13 @@ function createStateInfoInFile(myStates, name) {
             var area =  myStates.states[i].area;
 
             document.body.innerHTML = 
-            ` <button type = "button" onclick="flag = 1; redirect()">To Game</button>
+            ` <style>
+            * {
+                overflow-y: auto; 
+                min-height: 100vh;        
+            }
+            </style>
+            <button type = "button" onclick="flag = 1; redirect()">To Game</button>
             <button type = "button"  onclick="flag = 2; redirect()">Author Info</button>
             <button type = "button"  onclick="flag = 3; redirect()">Back to the Map</button>
             <h1>${state}</h1>

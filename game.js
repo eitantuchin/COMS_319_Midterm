@@ -1,4 +1,6 @@
 var count = 0;
+var intervalId;
+document.getElementById("myInput").disabled = true;
 function getInputValue() {
     let stateName = document.forms["game_form"]["inputStateName"];
     let inputStateName = stateName.value;
@@ -22,15 +24,30 @@ function getInputValue() {
                         count++;
                     
                     }
-                    if (count == 1) {
-                        timerElement.textContent = "5:00";
-                        totalSeconds = 300;
-                    }
+                    
                 });
             }
         }  
+        if (count == 50) { // change to 50
+            document.getElementById("myInput").disabled = true;
+            alert("Great job! You win!");
+            clearInterval(intervalId);
+            // stop timer
+        }
     }  
 } 
+
+function newGame() {
+    clearInterval(intervalId);
+    startTimer(5);
+    document.getElementById("myInput").disabled = false;
+    var paths = document.querySelectorAll('.map-container svg path');
+    paths.forEach(function (path) {
+        path.style.fill = 'white';
+    });
+    count = 0;
+ 
+}
 
 function guessedAlready(path) {
     if (path.style.fill == 'green') {
@@ -60,15 +77,12 @@ function startTimer(durationInMinutes) {
 
       if (totalSeconds <= 0) {
         clearInterval(intervalId);
+        document.getElementById("myInput").disabled = true;
         alert("Game Over! Try again!");
-        timerElement.textContent = "5:00"
-        totalSeconds = 300;
       }
-
       totalSeconds--;
     }
     updateTimer();
-    var intervalId = setInterval(updateTimer, 1000);
+    intervalId = setInterval(updateTimer, 1000);
+
   }
-// do this in function startGame() when button is pressed
-  startTimer(5);
