@@ -6,45 +6,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        background-color: rgb(21, 99, 125);
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-
-    #game_form {
-        position: absolute;
-        background-color: white;
-        width: fit-content;
-        font-size: 30px;
-    }
-
-    svg {
-        position: absolute;
-        height: 97%;
-        width: 97%;
-        margin-left: 100px;
-        margin-top: 35px;
-    }
-    
-    #nav {
-        background-color: white;
-    }
-</style>
 
 <body>
-    <button id = "nav" type = "button" onclick="flag = 1; redirect()">To the Map</button>
-    <button id = "nav" type = "button" onclick="flag = 2; redirect()">Author Info</button>
-    <form id="game_form">
-        <p>State name: <input type="text" name="inputStateName" value=""></p>
-        <button type="button" onclick="getInputValue();">GUESS STATE</button>
-    </form>
+    <div id = "nav">
+        <button type = "button" onclick="flag = 1; redirect()">To the Map</button>
+        <button type = "button" onclick="flag = 2; redirect()">Author Info</button>
+    </div>
+    <div id = game_stuff>
+        <form id="game_form" onsubmit="event.preventDefault(); getInputValue();">
+            <p>State name: <input type="text" name="inputStateName" value=""></p>
+            <button type="submit">GUESS STATE</button>
+        </form>
+        <div id="instructions">
+            <p>Guess all of the states in the US before time runs out!</p>
+        </div>
+        <div id="timer">5:00</div>
+    </div>
 
     <div class="map-container" style="display: flex;">
         <?xml version="1.0" encoding="UTF-8" standalone="no"?>

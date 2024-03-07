@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(21, 99, 125);
+    font-family: 'Arial', sans-serif;
+    overflow-y: auto; 
+    min-height: 100vh;
+
+}
+
+#nav {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#nav button {
+    padding: 10px;
+    background-color: rgb(21, 99, 125);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer; 
+}
+
+
+#game_form {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 500px;
+}
+
+#game_form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#game_form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#game_form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(21, 99, 125);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#game_form button:hover {
+    background-color: rgb(15, 75, 100);
+}
+
+#instructions {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 185px;
+}
+.map-container {
+   margin-right: 100px;
+}
+
+#timer {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 50px;
+    margin-left: 815px;
+    margin-top: -85px;
+}
+

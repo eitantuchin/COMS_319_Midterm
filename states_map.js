@@ -26,6 +26,7 @@ function createStateInfoInFile(myStates, name) {
             var pop =  myStates.states[i].population;
             var capital =  myStates.states[i].capital;
             var area =  myStates.states[i].area;
+
             document.body.innerHTML = 
             ` <button type = "button" onclick="flag = 1; redirect()">To Game</button>
             <button type = "button"  onclick="flag = 2; redirect()">Author Info</button>
