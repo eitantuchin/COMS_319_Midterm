@@ -9,31 +9,12 @@ body {
     min-height: 100vh;
 }
 
-#instructions {
-    background-color: white;
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-size: 30px;
-    margin-left: 50px;
-    margin-top: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 svg path:hover {
     fill: green !important;
     cursor: pointer;
 }
 
-svg {
-    position: absolute;
-    height: 85%;
-    width: 85%;
-    margin-left: 250px;
-    margin-top: -150px;
-}
+
 
 #nav {
     background-color: white;
@@ -55,7 +36,38 @@ svg {
     background-color: rgb(15, 75, 100);
 }
 
-#flag img{
+#flag img {
     width:20%;
     height:20%;
+    margin-top: 20px;
+    margin-left: 40px;
+
+}
+
+#left-column {
+    margin-left: 50px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    float:left;
+
+}
+
+#instructions {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+svg {
+    height: 95%;
+    width: 95%;
+    margin-left: 200px;
+    margin-top: -250px;
+    float:left;
 }

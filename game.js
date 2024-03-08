@@ -5,7 +5,6 @@ function getInputValue() {
     let stateName = document.forms["game_form"]["inputStateName"];
     let inputStateName = stateName.value;
    
-
     fetch("data.json")
         .then((response) => response.json())
         .then((data) => {
@@ -21,10 +20,8 @@ function getInputValue() {
                     if (name == inputStateName && !guessedAlready(path)) {
                         path.style.fill = 'green';
                         document.getElementById("game_form").reset();
-                        count++;
-                    
+                        count++;   
                     }
-                    
                 });
             }
         }  

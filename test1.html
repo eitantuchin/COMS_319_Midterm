@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test 1</title>
+</head>
+
+<body>
+    <button type="button" onclick="foo()">Go to Test 2</button>
+</body>
+<script>
+    function foo () {
+        localStorage.setItem('message', 'Hello World!');
+        window.location.href="test2.html";
+   
+    }
+</script>
+
+</html>

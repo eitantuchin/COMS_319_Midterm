@@ -1,11 +1,10 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-    var paths = document.querySelectorAll('.map-container svg path');
-
+    var paths = document.querySelectorAll('svg path');
     paths.forEach(function (path) {
         path.addEventListener('click', function () {
             var name = path.getAttribute('data-name');
-            createStateInfoInFile(myStates, name)           // Pass the state ID to the handler function    
+            createStateInfoInFile(myStates, name);
         });
     });
 });
@@ -27,25 +26,19 @@ function createStateInfoInFile(myStates, name) {
             var capital =  myStates.states[i].capital;
             var area =  myStates.states[i].area;
 
-            document.body.innerHTML = 
-            ` <style>
-            * {
-                overflow-y: auto; 
-                min-height: 100vh;        
-            }
-            </style>
-            <button type = "button" onclick="flag = 1; redirect()">To Game</button>
-            <button type = "button"  onclick="flag = 2; redirect()">Author Info</button>
-            <button type = "button"  onclick="flag = 3; redirect()">Back to the Map</button>
-            <h1>${state}</h1>
-            <img src="${flag}" alt="${state} Flag" style = "width: 40%; height: 40%">
-            <img src="${img}" alt="${state} Image" style = "width: 40%; height: 40%">
-            <p>Founded: ${founded}</p>
-            <p>Population: ${pop}</p>
-            <p>Capital: ${capital}</p>
-            <p>Area: ${area}</p>
-           
-            `;
+            // Save state info in localStorage
+            localStorage.setItem('stateInfo', JSON.stringify({
+                state: state,
+                flag: flag,
+                img: img,
+                founded: founded,
+                pop: pop,
+                capital: capital,
+                area: area
+            }));
+
+            // Redirect to state_info.html
+            window.location.href = 'state_info.html';
         }
     }
 }
