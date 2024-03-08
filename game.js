@@ -27,6 +27,7 @@ function getInputValue() {
         }  
         if (count == 50) { // change to 50
             document.getElementById("myInput").disabled = true;
+            document.getElementById("score").textContent = "Score: 100%";
             alert("Great job! You win!");
             clearInterval(intervalId);
             // stop timer
@@ -43,6 +44,7 @@ function newGame() {
         path.style.fill = 'white';
     });
     count = 0;
+    document.getElementById("score").textContent = "";
  
 }
 
@@ -75,7 +77,10 @@ function startTimer(durationInMinutes) {
       if (totalSeconds <= 0) {
         clearInterval(intervalId);
         document.getElementById("myInput").disabled = true;
+        let score = 100 * (count / 50);
+        document.getElementById("score").textContent = "Score: " + score + "%";
         alert("Game Over! Try again!");
+        
       }
       totalSeconds--;
     }
