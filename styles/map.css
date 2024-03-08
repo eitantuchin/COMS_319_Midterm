@@ -15,7 +15,6 @@ svg path:hover {
 }
 
 
-
 #nav {
     background-color: white;
     padding: 10px;
@@ -37,18 +36,20 @@ svg path:hover {
 }
 
 #flag img {
-    width:20%;
-    height:20%;
-    margin-top: 20px;
-    margin-left: 40px;
+    width: 100%;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    height: auto;
+
 
 }
 
 #left-column {
-    margin-left: 50px;
-    margin-top: 50px;
-    box-sizing: border-box;
-    float:left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 
 }
 
@@ -61,13 +62,57 @@ svg path:hover {
     text-align: center;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
   
 }
 
-svg {
-    height: 95%;
-    width: 95%;
-    margin-left: 200px;
-    margin-top: -250px;
-    float:left;
+.map-container {
+    display: flex;
+    height: 100vh;
 }
+
+.map-container svg {
+    flex: 2;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 0;
+    background-color: #f4f4f4;
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0; 
+}
+#usa-info {
+    margin-top: 20px;  
+    text-align: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #usa-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #usa-info p {
+    font-size: 16px;
+    line-height: 1.5; 
+  }
+  
+  #usa-info a {
+    color: rgb(21, 99, 125);  
+    text-decoration: none; 
+  }
+  
+  #usa-info a:hover {
+    text-decoration: underline;  
+  }

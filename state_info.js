@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Retrieve state info from localStorage
     var stateInfo = JSON.parse(localStorage.getItem('stateInfo'));
 
     if (stateInfo) {
@@ -10,27 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
         var pop = stateInfo.pop;
         var capital = stateInfo.capital;
         var area = stateInfo.area;
-        /*
-        <style>
-        * {
-            overflow-y: auto; 
-            min-height: 100vh;        
-        }
-        </style>
-        */
        
-        document.getElementById("px-3").innerHTML = 
+        document.getElementById("insert").innerHTML = 
         ` 
-        <button type="button" onclick="flag = 1; redirect()">To Game</button>
-        <button type="button" onclick="flag = 2; redirect()">Author Info</button>
-        <button type="button" onclick="flag = 3; redirect()">Back to the Map</button>
         <h1>${state}</h1>
-        <img src="${flag}" alt="${state} Flag" style="width: 40%; height: 40%">
-        <img src="${img}" alt="${state} Image" style="width: 40%; height: 40%">
+        <img src="${flag}" alt="${state} Flag" style="width: 45%; height: 45%">
+        <img src="${img}" alt="${state} Image" style="width: 45%; height: 45%">
         <p>Founded: ${founded}</p>
         <p>Population: ${pop}</p>
         <p>Capital: ${capital}</p>
-        <p>Area: ${area}</p>
+        <p>Area: ${area} sq mi</p>
         `;
     }
 });

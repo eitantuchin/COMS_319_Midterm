@@ -153,3 +153,17 @@ body {
 #new_game button:hover {
     background-color: rgb(15, 75, 100);
 }
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 0;
+    background-color: #f4f4f4;
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0; /* Remove default margin to ensure the text is centered vertically */
+}

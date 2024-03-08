@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(21, 99, 125);
+    overflow-y: auto;
+    min-height: 100vh;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 0;
+    background-color: #f4f4f4;
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0; /* Remove default margin to ensure the text is centered vertically */
+}
+
+#nav {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#nav button {
+    padding: 10px;
+    background-color: rgb(21, 99, 125);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#nav :hover {
+    background-color: rgb(15, 75, 100);
+}
+
+h1 {
+
+}
+
+p {
+
+}
+
+img {
+   
+}
