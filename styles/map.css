@@ -14,7 +14,6 @@ svg path:hover {
     cursor: pointer;
 }
 
-
 #nav {
     background-color: white;
     padding: 10px;
@@ -35,41 +34,64 @@ svg path:hover {
     background-color: rgb(15, 75, 100);
 }
 
-#flag  {
-    margin-top: -145px;
-}
-
-#flag img {
-    width: 100%;
-    max-width: 300px; 
-    height: auto;
-    display: inline-block;
-   
-}
-
-#info {
-    flex: 1;
+#info-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-
+    justify-content: center;
+    margin-top: 20px;
+    height: 200px;
 }
 
 #instructions {
     background-color: white;
     width: 300px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 20px;
     display: inline-block;
-    margin-right: 700px;
   
+}
+
+#flag {
+    display: flex;
+    margin: 0px 30px 0px 30px;
+    height: auto;
+}
+
+#flag img {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#usa-info {
+    text-align: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#usa-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#usa-info p {
+    font-size: 20px;
+    line-height: 1.5; 
+}
+
+#usa-info a {
+    color: rgb(21, 99, 125);  
+    text-decoration: none; 
+}
+
+#usa-info a:hover {
+    text-decoration: underline;  
 }
 
 .map-container {
@@ -96,34 +118,3 @@ footer p {
     font-size: 18px;
     margin: 0; 
 }
-#usa-info {
-    margin-top: 20px;  
-    text-align: center;
-    padding: 15px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    margin-left: 630px;
-    margin-top: -163px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  #usa-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  #usa-info p {
-    font-size: 20px;
-    line-height: 1.5; 
-  }
-  
-  #usa-info a {
-    color: rgb(21, 99, 125);  
-    text-decoration: none; 
-  }
-  
-  #usa-info a:hover {
-    text-decoration: underline;  
-  }
