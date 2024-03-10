@@ -16,8 +16,7 @@ function getInputValue() {
     function checkStateCondition(myStates) {
         var paths = document.querySelectorAll('.map-container svg path');
         for (var i = 0; i < myStates.states.length; i++) {
-            inputStateName = inputStateName.toLowerCase();
-            inputStateName = inputStateName.charAt(0).toUpperCase() + inputStateName.slice(1);
+            inputStateName = normalizeStateName(inputStateName);
             if (inputStateName === myStates.states[i].state) {
                paths.forEach(function (path) {
                     var name = path.getAttribute('data-name');
@@ -132,4 +131,18 @@ function startTimer(durationInMinutes) {
 function setTimer(minutes, seconds) {
     var timerElement = document.getElementById('timer');
     timerElement.textContent = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+}
+
+function normalizeStateName(name) {
+    name = name.toLowerCase();
+    const words = name.split(" ");
+
+    if (words.length >= 2) {
+        let output = "";
+        output += words[0].charAt(0).toUpperCase() + words[0].slice(1);
+        output += " " + words[1].charAt(0).toUpperCase() + words[1].slice(1);
+        return output;
+    } else {
+        return name.charAt(0).toUpperCase() + name.slice(1);
+    }
 }
