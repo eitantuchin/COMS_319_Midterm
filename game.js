@@ -52,9 +52,9 @@ function startGame() {
     document.getElementById("score").textContent = "";
 
     // Set the UI to in-game state
-    document.getElementById("timer").style.display = 'block';
-    document.getElementById("end_game").style.display = 'block';
-    document.getElementById("state_form").style.display = 'block';
+    document.getElementById("timer").style.display = 'inline-block';
+    document.getElementById("end_game").style.display = 'inline-block';
+    document.getElementById("state_form").style.display = 'inline-block';
     document.getElementById("name_form").style.display = 'none';
 }
 
@@ -82,7 +82,7 @@ function endGame() {
     document.getElementById("timer").style.display = 'none';
     document.getElementById("end_game").style.display = 'none';
     document.getElementById("state_form").style.display = 'none';
-    document.getElementById("name_form").style.display = 'block';
+    document.getElementById("name_form").style.display = 'inline-block';
 }
 
 function guessedAlready(path) {

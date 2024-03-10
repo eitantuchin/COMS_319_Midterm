@@ -4,13 +4,10 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: rgb(21, 99, 125);
     font-family: 'Arial', sans-serif;
-    overflow-y: auto;
     min-height: 100vh;
-
 }
 
 #nav {
@@ -33,16 +30,19 @@ body {
     background-color: rgb(15, 75, 100);
 }
 
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
 .game_form {
-    position: absolute;
     background-color: white;
     width: 300px;
     padding: 20px;
     font-size: 18px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 500px;
-    margin-top: -130px;
+    display: inline-block;
 }
 
 .game_form label {
@@ -77,6 +77,16 @@ body {
     display: none;
 }
 
+#game_stuff {
+    display: flex;
+    margin-top: 50px;
+    width: 1500px;
+}
+
+#instructions, #state_form, #name_form, #timer, #end_game {
+    margin-right: 20px;
+}
+
 #instructions {
     background-color: white;
     width: 300px;
@@ -85,15 +95,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 20px;
-    margin-top: 15px;
-    margin-left: 185px;
+    display: inline-block;
 }
 
 .map-container {
-    margin-left: 100px;
-    margin-top: -20px;
     width: 80%;
-
 }
 
 #timer {
@@ -105,8 +111,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 50px;
-    margin-left: 815px;
-    margin-top: -130px;
+    display: inline-block;
 }
 
 #nav {
@@ -138,8 +143,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 50px;
-    margin-left: 1030px;
-    margin-top: -98px;
 
 }
 
@@ -159,20 +162,21 @@ body {
     background-color: rgb(15, 75, 100);
 }
 
+#score {
+    font-size: 40px;
+}
+
 footer {
     text-align: center;
     margin-top: 30px;
     padding: 15px 0;
     background-color: #f4f4f4;
     width: 100%;
-    border-radius: 10px;
+    position: fixed;
+    bottom: 0px;
 }
 
 footer p {
     font-size: 18px;
     margin: 0; /* Remove default margin to ensure the text is centered vertically */
-}
-
-#score {
-    font-size: 40px;
 }
