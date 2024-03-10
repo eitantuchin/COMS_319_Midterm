@@ -172,3 +172,7 @@ footer p {
     font-size: 18px;
     margin: 0; /* Remove default margin to ensure the text is centered vertically */
 }
+
+#score {
+    font-size: 40px;
+}
