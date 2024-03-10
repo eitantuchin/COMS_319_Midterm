@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -8,13 +8,15 @@ body {
     overflow-y: auto;
     min-height: 100vh;
 }
+
 footer {
     text-align: center;
     margin-top: 30px;
     padding: 15px 0;
     background-color: #f4f4f4;
     width: 100%;
-    border-radius: 10px;
+    position: fixed;
+    bottom: 0px;
 }
 
 footer p {
@@ -42,14 +44,34 @@ footer p {
     background-color: rgb(15, 75, 100);
 }
 
-h1 {
-
+.centered {
+    display: flex;
+    justify-content: center;
 }
 
-p {
-
+#insert {
+    color: white;
+    font-family: sans-serif;
 }
 
-img {
-   
+#insert h1 {
+    padding: 50px;
+    font-size: 36px;
+}
+
+#insert p {
+    padding: 0px 15px 0px;
+    font-size: 25px;
+}
+
+#insert img {
+    height: 400px;
+}
+
+#map {
+    margin-left: 20px;
+}
+
+#state-info {
+    padding-top: 50px;
 }

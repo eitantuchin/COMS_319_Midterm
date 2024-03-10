@@ -11,14 +11,20 @@ document.addEventListener('DOMContentLoaded', function () {
         var area = stateInfo.area;
        
         document.getElementById("insert").innerHTML = 
-        ` 
-        <h1>${state}</h1>
-        <img src="${flag}" alt="${state} Flag" style="width: 45%; height: 45%">
-        <img src="${img}" alt="${state} Image" style="width: 45%; height: 45%">
-        <p>Founded: ${founded}</p>
-        <p>Population: ${pop}</p>
-        <p>Capital: ${capital}</p>
-        <p>Area: ${area} sq mi</p>
+        `
+        <div class="centered">
+            <h1>${state}</h1>
+        </div>
+        <div class="centered">
+            <img id="flag" src="${flag}" alt="${state} Flag">
+            <img id="map" src="${img}" alt="${state} Image">
+        </div>
+        <div class="centered" id="state-info">
+            <p><b>Founded:</b> ${founded}</p>
+            <p><b>Population:</b> ${pop}</p>
+            <p><b>Capital:</b> ${capital}</p>
+            <p><b>Area:</b> ${area} sq mi</p>
+        </div>
         `;
     }
 });
