@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="styles/leaderboard.css">
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1 style="font-size: 36px;">Leaderboard</h1>
+        </header>
+        <main>
+            <div id="table-container">
+                <p id="table-empty">Play the game to get a list of high scores</p>
+                <table id="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Player Name</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div>
+                <button onclick="flag = 1; changePage()">Go to Game</button>
+                <button style="margin-left: 15px;" onclick="flag = 2; changePage()">Learn About States</button>
+            </div>
+        </main>
+
+        <footer>
+            <p style="font-size: 18px;">&copy; Eitan Tuchin 2024 <br> &copy; Andrew Yunt 2024</p>
+        </footer>
+    </div>
+    <script src="leaderboard.js"></script>
+</body>
+
+</html>
