@@ -1,6 +1,7 @@
-var count = 0;
+var score = 0;
 var intervalId;
 var gameRunning = false;
+var playerName;
 
 function getInputValue() {
     let stateName = document.forms["state_form"]["inputStateName"];
@@ -21,12 +22,12 @@ function getInputValue() {
                     if (name == inputStateName && !guessedAlready(path)) {
                         path.style.fill = 'green';
                         document.getElementById("state_form").reset();
-                        count++;   
+                        score++;   
                     }
                 });
             }
         }  
-        if (count == 50) { // change to 50
+        if (score == 50) { // change to 50
             document.getElementById("score").textContent = "Score: 100%";
             alert("Great job! You win!");
             endGame();
@@ -35,19 +36,22 @@ function getInputValue() {
 }
 
 function startGame() {
-    let username = document.forms["name_form"]["inputUsername"];
+    playerName = document.forms["name_form"]["inputUsername"].value;
+    console.log("Game starting for player %s.", playerName);
 
+    // Start a new timer and set the game to running
+    gameRunning = true;
     clearInterval(intervalId);
     startTimer(5);
-    gameRunning = true;
     
     var paths = document.querySelectorAll('.map-container svg path');
     paths.forEach(function (path) {
         path.style.fill = 'white';
     });
-    count = 0;
+    score = 0;
     document.getElementById("score").textContent = "";
 
+    // Set the UI to in-game state
     document.getElementById("timer").style.display = 'block';
     document.getElementById("end_game").style.display = 'block';
     document.getElementById("state_form").style.display = 'block';
@@ -55,9 +59,26 @@ function startGame() {
 }
 
 function endGame() {
+    console.log("Game ending for player %s with score %d.", playerName, score);
+
+    // Set game running to false and stop the timer
     gameRunning = false;
     clearInterval(intervalId);
 
+    // Add player to leaderboard
+    var leaderboardString = localStorage.getItem('leaderboard');
+    var leaderboard = JSON.parse(leaderboardString);
+
+    if (leaderboard == null) {
+        leaderboard = [];
+    }
+
+    leaderboard.push({"user": playerName, "score": score});
+    localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
+
+    console.log(leaderboard);
+
+    // Reset UI to pre-game state
     document.getElementById("timer").style.display = 'none';
     document.getElementById("end_game").style.display = 'none';
     document.getElementById("state_form").style.display = 'none';
@@ -75,8 +96,11 @@ function redirect() {
     if (flag == 1) {
         window.location.href = 'states_map.html';
     }
-    else {
+    else if (flag == 2) {
         window.location.href = 'index.html';
+    }
+    else {
+        window.location.href="leaderboard.html";
     }
 }
 
@@ -91,7 +115,7 @@ function startTimer(durationInMinutes) {
 
       if (totalSeconds <= 0) {
         clearInterval(intervalId);
-        let score = 100 * (count / 50);
+        let score = 100 * (score / 50);
         document.getElementById("score").textContent = "Score: " + score + "%";
         alert("Game Over! Try again!");
         
