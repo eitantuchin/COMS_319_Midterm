@@ -17,14 +17,20 @@
             <p>Guess all of the states in the US before time runs out! Scroll down to see all the states.</p>
         </div>
         <div>
-            <form id="game_form" onsubmit="event.preventDefault(); getInputValue();">
+            <form class="game_form" id="state_form" onsubmit="event.preventDefault(); getInputValue();">
                 <p>State name: <input type="text" id="myInput" name="inputStateName" value=""></p>
                 <button type="submit">GUESS STATE</button>
             </form>
         </div>
+        <div>
+            <form class="game_form" id="name_form" onsubmit="event.preventDefault(); startGame();">
+                <p>Your name: <input type="text" id="myInput" name="inputUsername" value=""></p>
+                <button type="submit">PLAY GAME</button>
+            </form>
+        </div>
         <div id="timer">5:00</div>
-        <div id="new_game">
-            <button type="button" onclick="newGame()">PLAY GAME</button>
+        <div id="end_game">
+            <button id="game-button" type="button" onclick="endGame()">END GAME</button>
         </div>
         <div id="score"></div>
     </div>
