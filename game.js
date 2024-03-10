@@ -16,6 +16,8 @@ function getInputValue() {
     function checkStateCondition(myStates) {
         var paths = document.querySelectorAll('.map-container svg path');
         for (var i = 0; i < myStates.states.length; i++) {
+            inputStateName = inputStateName.toLowerCase();
+            inputStateName = inputStateName.charAt(0).toUpperCase() + inputStateName.slice(1);
             if (inputStateName === myStates.states[i].state) {
                paths.forEach(function (path) {
                     var name = path.getAttribute('data-name');
