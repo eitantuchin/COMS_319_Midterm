@@ -33,8 +33,7 @@ body {
     background-color: rgb(15, 75, 100);
 }
 
-
-#game_form {
+.game_form {
     position: absolute;
     background-color: white;
     width: 300px;
@@ -46,20 +45,20 @@ body {
     margin-top: -130px;
 }
 
-#game_form label {
+.game_form label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-#game_form input {
+.game_form input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     font-size: 16px;
 }
 
-#game_form button {
+.game_form button {
     width: 100%;
     padding: 10px;
     background-color: rgb(21, 99, 125);
@@ -70,8 +69,12 @@ body {
     cursor: pointer;
 }
 
-#game_form button:hover {
+.game_form button:hover {
     background-color: rgb(15, 75, 100);
+}
+
+#state_form {
+    display: none;
 }
 
 #instructions {
@@ -94,6 +97,7 @@ body {
 }
 
 #timer {
+    display: none;
     background-color: white;
     width: 200px;
     padding: 20px;
@@ -125,7 +129,8 @@ body {
     background-color: rgb(15, 75, 100);
 }
 
-#new_game {
+#end_game {
+    display: none;
     background-color: white;
     width: 200px;
     padding: 20px;
@@ -138,7 +143,7 @@ body {
 
 }
 
-#new_game button {
+#end_game button {
     width: 100%;
     padding: 20px;
     background-color: rgb(21, 99, 125);
@@ -150,7 +155,7 @@ body {
 
 }
 
-#new_game button:hover {
+#end_game button:hover {
     background-color: rgb(15, 75, 100);
 }
 

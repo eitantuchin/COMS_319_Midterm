@@ -1,8 +1,9 @@
 var count = 0;
 var intervalId;
-document.getElementById("myInput").disabled = true;
+var gameRunning = false;
+
 function getInputValue() {
-    let stateName = document.forms["game_form"]["inputStateName"];
+    let stateName = document.forms["state_form"]["inputStateName"];
     let inputStateName = stateName.value;
    
     fetch("data.json")
@@ -19,33 +20,48 @@ function getInputValue() {
                     var name = path.getAttribute('data-name');
                     if (name == inputStateName && !guessedAlready(path)) {
                         path.style.fill = 'green';
-                        document.getElementById("game_form").reset();
+                        document.getElementById("state_form").reset();
                         count++;   
                     }
                 });
             }
         }  
         if (count == 50) { // change to 50
-            document.getElementById("myInput").disabled = true;
             document.getElementById("score").textContent = "Score: 100%";
             alert("Great job! You win!");
-            clearInterval(intervalId);
-            // stop timer
+            endGame();
         }
     }  
-} 
+}
 
-function newGame() {
+function startGame() {
+    let username = document.forms["name_form"]["inputUsername"];
+
     clearInterval(intervalId);
     startTimer(5);
-    document.getElementById("myInput").disabled = false;
+    gameRunning = true;
+    
     var paths = document.querySelectorAll('.map-container svg path');
     paths.forEach(function (path) {
         path.style.fill = 'white';
     });
     count = 0;
     document.getElementById("score").textContent = "";
- 
+
+    document.getElementById("timer").style.display = 'block';
+    document.getElementById("end_game").style.display = 'block';
+    document.getElementById("state_form").style.display = 'block';
+    document.getElementById("name_form").style.display = 'none';
+}
+
+function endGame() {
+    gameRunning = false;
+    clearInterval(intervalId);
+
+    document.getElementById("timer").style.display = 'none';
+    document.getElementById("end_game").style.display = 'none';
+    document.getElementById("state_form").style.display = 'none';
+    document.getElementById("name_form").style.display = 'block';
 }
 
 function guessedAlready(path) {
@@ -65,18 +81,16 @@ function redirect() {
 }
 
 function startTimer(durationInMinutes) {
-    var timerElement = document.getElementById('timer');
     var totalSeconds = durationInMinutes * 60;
     
     function updateTimer() {
       var minutes = Math.floor(totalSeconds / 60);
       var seconds = totalSeconds % 60;
 
-      timerElement.textContent = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+      setTimer(minutes, seconds);
 
       if (totalSeconds <= 0) {
         clearInterval(intervalId);
-        document.getElementById("myInput").disabled = true;
         let score = 100 * (count / 50);
         document.getElementById("score").textContent = "Score: " + score + "%";
         alert("Game Over! Try again!");
@@ -87,4 +101,9 @@ function startTimer(durationInMinutes) {
     updateTimer();
     intervalId = setInterval(updateTimer, 1000);
 
-  }
+}
+
+function setTimer(minutes, seconds) {
+    var timerElement = document.getElementById('timer');
+    timerElement.textContent = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+}
